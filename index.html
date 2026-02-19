@@ -1,11 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-    <title>Nome Cognome - Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giuliano Pennacchio | Portfolio</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; margin: 0; color: #111; }
+    .container { max-width: 980px; margin: 0 auto; padding: 28px 18px; }
+    header { padding: 28px 0 10px; border-bottom: 1px solid #eee; }
+    h1 { margin: 0 0 6px; font-size: 38px; letter-spacing: -0.5px; }
+    .subtitle { margin: 0; font-size: 16px; color: #444; }
+    .links a { display: inline-block; margin-right: 12px; margin-top: 10px; color: #0b5fff; text-decoration: none; }
+    .links a:hover { text-decoration: underline; }
+    section { padding: 22px 0; border-bottom: 1px solid #f1f1f1; }
+    h2 { margin: 0 0 10px; font-size: 20px; }
+    p { margin: 8px 0; line-height: 1.55; color: #222; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+    .card { border: 1px solid #eee; border-radius: 12px; padding: 14px; }
+    .card h3 { margin: 0 0 6px; font-size: 16px; }
+    .meta { font-size: 13px; color: #555; margin: 0 0 8px; }
+    .tag { display: inline-block; font-size: 12px; padding: 4px 8px; border: 1px solid #ddd; border-radius: 999px; margin-right: 6px; margin-top: 6px; color: #333; }
+    footer { padding: 18px 0 30px; color: #666; font-size: 13px; }
+    @media (min-width: 760px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Nome Cognome</h1>
-    <h2>Aerospace Engineer | GNC | Space Systems</h2>
-    <p>Welcome to my portfolio.</p>
+  <div class="container">
+    <header>
+      <h1>Giuliano Pennacchio</h1>
+      <p class="subtitle">Aerospace Engineer (MSc) · GNC · Space Systems · Model-Based Design</p>
+
+      <div class="links">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/GiulianoPennacchioJ" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:tuamail@email.com">Email</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <p>
+        Junior Aerospace Engineer specializing in Guidance, Navigation & Control (GNC) and space systems.
+        Strong background in orbital mechanics and hands-on experience with Model-Based Design.
+      </p>
+      <p class="meta">
+        Interests: ADCS · Estimation (EKF) · Orbital robotics · Dynamics & control · Simulation
+      </p>
+      <div>
+        <span class="tag">GNC</span>
+        <span class="tag">ADCS</span>
+        <span class="tag">EKF</span>
+        <span class="tag">Orbital Mechanics</span>
+        <span class="tag">Simulink</span>
+        <span class="tag">Python/MATLAB</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>ADCS Detumbling Simulator</h3>
+          <p class="meta">B-dot control · attitude dynamics · simulation</p>
+          <p>Simulation of detumbling for a small satellite, with plots and reproducible setup.</p>
+          <p><a href="#" target="_blank" rel="noopener">Repository →</a></p>
+        </div>
+
+        <div class="card">
+          <h3>Extended Kalman Filter for Attitude Estimation</h3>
+          <p class="meta">EKF · sensor fusion · quaternion</p>
+          <p>EKF pipeline for attitude estimation with noisy sensors and validation plots.</p>
+          <p><a href="#" target="_blank" rel="noopener">Repository →</a></p>
+        </div>
+
+        <div class="card">
+          <h3>Orbital Mechanics Toolbox</h3>
+          <p class="meta">Kepler propagation · frames · Lambert (planned)</p>
+          <p>Reusable functions and notebooks for mission analysis and orbit propagation.</p>
+          <p><a href="#" target="_blank" rel="noopener">Repository →</a></p>
+        </div>
+
+        <div class="card">
+          <h3>MSc Thesis</h3>
+          <p class="meta">Orbital robotics · dynamics · model-based design</p>
+          <p>Short overview + key results, figures, and methods used in the thesis work.</p>
+          <p><a href="#" target="_blank" rel="noopener">Read more →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <p><b>Technical:</b> MATLAB/Simulink, Python, control, estimation, orbital mechanics, dynamics.</p>
+      <p><b>Tools:</b> Git/GitHub, LaTeX, basic CI (planned).</p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Giuliano Pennacchio · Built with GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
