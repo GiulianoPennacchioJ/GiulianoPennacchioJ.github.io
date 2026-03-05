@@ -1,45 +1,87 @@
-# Giuliano Pennacchio – Portfolio Website
+# Giuliano Pennacchio – Flight Dynamics Portfolio
 
 This repository contains the source code of my personal portfolio website:
 
 🔗 https://GiulianoPennacchioJ.github.io
 
+---
+
 ## About
 
-This website presents my work and projects in:
+This portfolio presents my work in **Flight Dynamics and State Estimation for space applications**, with a technical focus on:
 
-- Space Systems Engineering
-- GNC and Relative Navigation
-- LiDAR-based Pose Estimation
-- Model-Based Design
-- Autonomous Systems
+- High-fidelity orbit propagation  
+- Orbit determination and covariance analysis  
+- Nonlinear state estimation (Extended Kalman Filter)  
+- Perturbation modeling (J2, atmospheric drag, SRP)  
+- Numerical simulation using GMAT and Python  
 
-The portfolio includes:
+The projects are structured to reflect a complete Flight Dynamics workflow:
 
-- MSc Thesis on LiDAR-based pose acquisition for non-cooperative spacecraft
-- Technical summaries and documentation
-- Selected engineering and simulation projects
-- Contact information and professional links
+**Orbit Propagation → Orbit Determination → Recursive State Estimation**
+
+In addition, the portfolio includes my MSc thesis on LiDAR-based pose estimation for non-cooperative spacecraft.
+
+---
+
+## Featured Technical Projects
+
+### High-Fidelity Orbit Propagation and Perturbation Analysis
+Development of a numerical propagation framework for LEO spacecraft including comparison between 2-body and perturbed models, long-term trajectory divergence assessment and sensitivity analysis.
+
+### Batch Orbit Determination and Covariance Analysis
+Implementation of a Batch Least Squares estimator using simulated range and range-rate observations, including residual analysis, convergence assessment and covariance evaluation.
+
+### Extended Kalman Filter for Nonlinear Orbit Estimation
+Design and implementation of an EKF for recursive orbit estimation, including nonlinear dynamics modeling, covariance propagation and Q/R tuning analysis.
+
+### MSc Thesis – LiDAR-Based Pose Estimation of Non-Cooperative Space Targets
+Performance analysis of the OBB-TM algorithm for LiDAR-based pose acquisition in lost-in-space conditions, with emphasis on robustness, symmetry handling and estimation accuracy.
+
+---
+
+## Technical Focus
+
+### Flight Dynamics
+- Orbit propagation  
+- Perturbation modeling  
+- Maneuver analysis  
+- Orbit determination  
+
+### Estimation & GNC
+- Batch Least Squares  
+- Extended Kalman Filtering  
+- Covariance analysis  
+- Nonlinear system modeling  
+
+### Tools
+- GMAT  
+- Python (NumPy, SciPy, Matplotlib)  
+- Git/GitHub  
+- LaTeX  
+
+---
 
 ## Structure
 
 The website is built using:
 
-- HTML5
-- CSS3
-- GitHub Pages
+- HTML5  
+- CSS3  
+- GitHub Pages  
 
 Main files:
 
-- `index.html` – Main page
-- `style.css` – Styling
-- `assets/` – Images and resources
+- `index.html` – Main page  
+- `assets/` – Images and resources  
+
+---
 
 ## Contact
 
-- LinkedIn
-- GitHub
-- Email
+- LinkedIn  
+- GitHub  
+- Email  
 
 ---
 
