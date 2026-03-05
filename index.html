@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Giuliano Pennacchio | Portfolio</title>
+  <title>Giuliano Pennacchio | Flight Dynamics Portfolio</title>
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; margin: 0; color: #111; }
-    .container { max-width: 980px; margin: 0 auto; padding: 28px 18px; }
-    header { padding: 28px 0 10px; border-bottom: 1px solid #eee; }
-    h1 { margin: 0 0 6px; font-size: 38px; letter-spacing: -0.5px; }
-    .subtitle { margin: 0; font-size: 16px; color: #444; }
-    .links a { display: inline-block; margin-right: 12px; margin-top: 10px; color: #0b5fff; text-decoration: none; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 30px 20px; }
+    header { padding: 30px 0 15px; border-bottom: 1px solid #eee; }
+    h1 { margin: 0 0 6px; font-size: 40px; letter-spacing: -0.5px; }
+    .subtitle { margin: 0; font-size: 17px; color: #444; }
+    .links a { display: inline-block; margin-right: 14px; margin-top: 12px; color: #0b5fff; text-decoration: none; }
     .links a:hover { text-decoration: underline; }
-    section { padding: 22px 0; border-bottom: 1px solid #f1f1f1; }
-    h2 { margin: 0 0 10px; font-size: 20px; }
-    p { margin: 8px 0; line-height: 1.55; color: #222; }
-    .grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
-    .card { border: 1px solid #eee; border-radius: 12px; padding: 14px; }
-    .card h3 { margin: 0 0 6px; font-size: 16px; }
-    .meta { font-size: 13px; color: #555; margin: 0 0 8px; }
+    section { padding: 26px 0; border-bottom: 1px solid #f2f2f2; }
+    h2 { margin: 0 0 14px; font-size: 22px; }
+    p { margin: 8px 0; line-height: 1.6; color: #222; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+    .card { border: 1px solid #eee; border-radius: 14px; padding: 16px; }
+    .card h3 { margin: 0 0 6px; font-size: 17px; }
+    .meta { font-size: 13px; color: #555; margin: 0 0 10px; }
     .tag { display: inline-block; font-size: 12px; padding: 4px 8px; border: 1px solid #ddd; border-radius: 999px; margin-right: 6px; margin-top: 6px; color: #333; }
-    footer { padding: 18px 0 30px; color: #666; font-size: 13px; }
-    @media (min-width: 760px) {
+    footer { padding: 20px 0 35px; color: #666; font-size: 13px; }
+    @media (min-width: 780px) {
       .grid { grid-template-columns: 1fr 1fr; }
     }
   </style>
@@ -31,7 +31,9 @@
   <div class="container">
     <header>
       <h1>Giuliano Pennacchio</h1>
-      <p class="subtitle">Aerospace Engineer (MSc) · GNC · Space Systems · Model-Based Design</p>
+      <p class="subtitle">
+        Aerospace Engineer · Flight Dynamics & Orbit Determination · State Estimation · GMAT & Python
+      </p>
 
       <div class="links">
         <a href="https://www.linkedin.com/in/giuliano-pennacchio-5385572b7/" target="_blank" rel="noopener">LinkedIn</a>
@@ -43,74 +45,115 @@
     <section>
       <h2>About</h2>
       <p>
-        Junior Aerospace Engineer specializing in Guidance, Navigation & Control (GNC) and space systems.
-        Strong background in orbital mechanics and hands-on experience with Model-Based Design.
+        Aerospace Engineer focused on Flight Dynamics and State Estimation for space applications.
+        My work centers on orbital mechanics, high-fidelity orbit propagation, orbit determination,
+        and nonlinear filtering for spacecraft state estimation.
       </p>
-      <p class="meta">
-        Interests: ADCS · Estimation (EKF) · Orbital robotics · Dynamics & control · Simulation
+
+      <p>
+        I develop technical projects combining GMAT simulations and Python-based numerical modeling,
+        with emphasis on perturbation analysis (J2, atmospheric drag, SRP), covariance assessment,
+        residual analysis and Extended Kalman Filtering.
       </p>
+
+      <p>
+        My objective is to contribute to operational Flight Dynamics and GNC activities,
+        supporting orbit maintenance, estimation performance, maneuver design,
+        and on-orbit mission analysis.
+      </p>
+
       <div>
-        <span class="tag">GNC</span>
-        <span class="tag">ADCS</span>
-        <span class="tag">EKF</span>
+        <span class="tag">Flight Dynamics</span>
+        <span class="tag">Orbit Determination</span>
+        <span class="tag">Extended Kalman Filter</span>
         <span class="tag">Orbital Mechanics</span>
-        <span class="tag">Simulink</span>
-        <span class="tag">Python/MATLAB</span>
+        <span class="tag">GMAT</span>
+        <span class="tag">Python</span>
       </div>
     </section>
 
     <section>
-      <h2>Featured Projects</h2>
+      <h2>Technical Projects</h2>
       <div class="grid">
-        <div class="card">
-          <h3>ADCS Detumbling Simulator</h3>
-          <p class="meta">B-dot control · attitude dynamics · simulation</p>
-          <p>Simulation of detumbling for a small satellite, with plots and reproducible setup.</p>
-          <p><a href="https://giulianopennacchioj.github.io/ADCS_Detumbling_Simulator/" target="_blank" rel="noopener">Repository →</a></p>
-        </div>
 
         <div class="card">
-          <h3>Extended Kalman Filter for Attitude Estimation</h3>
-          <p class="meta">EKF · sensor fusion · quaternion</p>
-          <p>EKF pipeline for attitude estimation with noisy sensors and validation plots.</p>
+          <h3>High-Fidelity Orbit Propagation and Perturbation Analysis</h3>
+          <p class="meta">Orbital Mechanics · GMAT · Numerical Propagation · Sensitivity Analysis</p>
+          <p>
+            Development of a high-fidelity orbital propagation framework to assess the impact of
+            perturbations on LEO spacecraft trajectories.
+          </p>
+          <p>
+            Includes comparison between 2-body and perturbed models (J2, drag, SRP),
+            long-term trajectory divergence assessment, and sensitivity analysis
+            with respect to ballistic coefficient variations.
+          </p>
           <p><a href="#" target="_blank" rel="noopener">Repository →</a></p>
         </div>
 
         <div class="card">
-          <h3>Orbital Mechanics Toolbox</h3>
-          <p class="meta">Kepler propagation · frames · Lambert (planned)</p>
-          <p>Reusable functions and notebooks for mission analysis and orbit propagation.</p>
+          <h3>Batch Orbit Determination and Covariance Analysis</h3>
+          <p class="meta">Least Squares · State Estimation · Residual Analysis · Observability</p>
+          <p>
+            Implementation of a Batch Least Squares orbit determination algorithm
+            using simulated range and range-rate measurements with realistic noise.
+          </p>
+          <p>
+            Includes residual evaluation, convergence assessment, covariance matrix computation,
+            and analysis of estimation sensitivity to tracking geometry.
+          </p>
           <p><a href="#" target="_blank" rel="noopener">Repository →</a></p>
         </div>
 
         <div class="card">
-          <h3>MSc Thesis - Lidar Pose Acquisition</h3>
-          <p class="meta">Non-Cooperative Target · OBB-TM · ICP · Symmetry Handling</p>
-          <p>Performance analysis of a LiDAR-based pose acquisition framework 
-    for non-cooperative spacecraft in lost-in-space conditions.</p>
-          <p><a href="https://github.com/GiulianoPennacchioJ/msc-thesis-orbital-robotics" target="_blank" rel="noopener">
-       Repository →
-    </a>
-  </p>
+          <h3>Extended Kalman Filter for Nonlinear Orbit Estimation</h3>
+          <p class="meta">Nonlinear Dynamics · EKF · Covariance Propagation · GNC</p>
+          <p>
+            Design and implementation of an Extended Kalman Filter for recursive nonlinear orbit estimation.
+          </p>
+          <p>
+            Includes state and covariance propagation, measurement update integration,
+            Q/R tuning analysis, and comparison against batch estimation approaches.
+          </p>
+          <p><a href="#" target="_blank" rel="noopener">Repository →</a></p>
+        </div>
 
-  <p>
-    <a href="https://github.com/GiulianoPennacchioJ/msc-thesis-orbital-robotics/blob/main/docs/Technical_Summary.pdf?raw=true"
-       target="_blank" rel="noopener">
-       19-page Technical Summary (PDF) →
-    </a>
-  </p>
-</div>
+        <div class="card">
+          <h3>MSc Thesis – LiDAR-Based Pose Estimation of Non-Cooperative Space Targets</h3>
+          <p class="meta">Pose Estimation · OBB-TM Algorithm · Performance Analysis · Orbital Robotics</p>
+          <p>
+            Performance analysis of the OBB-TM algorithm for LiDAR-based pose estimation
+            of non-cooperative spacecraft in lost-in-space conditions.
+          </p>
+          <p>
+            The work evaluates robustness, symmetry handling and estimation accuracy,
+            contributing to guidance and navigation strategies for orbital robotics applications.
+          </p>
+          <p>
+            <a href="https://github.com/GiulianoPennacchioJ/msc-thesis-orbital-robotics" target="_blank" rel="noopener">
+              Repository →
+            </a>
+          </p>
+        </div>
+
       </div>
     </section>
 
     <section>
-      <h2>Skills</h2>
-      <p><b>Technical:</b> MATLAB/Simulink, Python, control, estimation, orbital mechanics, dynamics.</p>
-      <p><b>Tools:</b> Git/GitHub, LaTeX, basic CI (planned).</p>
+      <h2>Technical Skills</h2>
+      <p>
+        <b>Flight Dynamics:</b> Orbit propagation, perturbation modeling (J2, drag, SRP), maneuver analysis, orbit determination.
+      </p>
+      <p>
+        <b>Estimation & GNC:</b> Batch Least Squares, Extended Kalman Filter, covariance analysis, nonlinear system modeling.
+      </p>
+      <p>
+        <b>Tools:</b> GMAT, Python (NumPy, SciPy, Matplotlib), Git/GitHub, LaTeX.
+      </p>
     </section>
 
     <footer>
-      © <span id="year"></span> Giuliano Pennacchio · Built with GitHub Pages
+      © <span id="year"></span> Giuliano Pennacchio · Portfolio focused on Flight Dynamics & State Estimation
     </footer>
   </div>
 
