@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Giuliano Pennacchio | Flight Dynamics Portfolio</title>
+  <title>Giuliano Pennacchio | Flight Dynamics & Mission Analysis Portfolio</title>
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; margin: 0; color: #111; }
     .container { max-width: 1000px; margin: 0 auto; padding: 30px 20px; }
@@ -32,7 +32,7 @@
     <header>
       <h1>Giuliano Pennacchio</h1>
       <p class="subtitle">
-        Aerospace Engineer · Flight Dynamics & Orbit Determination · State Estimation · GMAT & Python
+        Aerospace Engineer · Flight Dynamics & Mission Analysis · GNC/AOCS · State Estimation · GMAT & Python
       </p>
 
       <div class="links">
@@ -45,28 +45,29 @@
     <section>
       <h2>About</h2>
       <p>
-        Aerospace Engineer focused on Flight Dynamics and State Estimation for space applications.
-        My work centers on orbital mechanics, high-fidelity orbit propagation, orbit determination,
-        and nonlinear filtering for spacecraft state estimation.
+        Aerospace Engineer focused on Flight Dynamics, Mission Analysis, and State Estimation for space applications.
+        My work centers on orbital mechanics, constellation design, interplanetary trajectory optimization,
+        and nonlinear filtering for spacecraft navigation.
       </p>
 
       <p>
         I develop technical projects combining GMAT simulations and Python-based numerical modeling,
-        with emphasis on perturbation analysis (J2, atmospheric drag, SRP), covariance assessment,
-        residual analysis and Extended Kalman Filtering.
+        with an emphasis on perturbation analysis, Walker constellation coverage optimization, Lambert's problem solvers, 
+        and recursive state estimation (EKF).
       </p>
 
       <p>
-        My objective is to contribute to operational Flight Dynamics and GNC activities,
-        supporting orbit maintenance, estimation performance, maneuver design,
-        and on-orbit mission analysis.
+        My objective is to contribute to operational Flight Dynamics, Mission Analysis, and GNC activities,
+        supporting trajectory design, constellation management, and advanced orbit determination workflows.
       </p>
 
       <div>
         <span class="tag">Flight Dynamics</span>
+        <span class="tag">Mission Analysis</span>
+        <span class="tag">Constellation Design</span>
+        <span class="tag">Trajectory Optimization</span>
         <span class="tag">Orbit Determination</span>
         <span class="tag">Extended Kalman Filter</span>
-        <span class="tag">Orbital Mechanics</span>
         <span class="tag">GMAT</span>
         <span class="tag">Python</span>
       </div>
@@ -76,6 +77,7 @@
       <h2>Technical Projects</h2>
       <div class="grid">
 
+        <!-- PROGETTO 1: ORE PROPAGATION (Completo) -->
         <div class="card">
           <h3>High-Fidelity Orbit Propagation and Perturbation Analysis</h3>
           <p class="meta">Orbital Mechanics · GMAT · Numerical Propagation · Sensitivity Analysis</p>
@@ -91,6 +93,36 @@
           <p><a href="https://github.com/GiulianoPennacchioJ/high-fidelity-orbit-propagation" target="_blank" rel="noopener">Repository →</a></p>
         </div>
 
+        <!-- NUOVO PROGETTO: PORKCHOP PLOT (WIP - Iniziamo da qui) -->
+        <div class="card">
+          <h3>Interplanetary Launch Window Analysis (Porkchop Plot Solver)</h3>
+          <p class="meta">Trajectory Optimization · Lambert's Problem · Delta-V Analysis · Python</p>
+          <p>
+            Numerical tool designed to compute and optimize Earth-to-Mars interplanetary transfer windows.
+          </p>
+          <p>
+            Solves Lambert's transcendental equation across a customized grid of departure and arrival dates,
+            generating professional Porkchop Plots mapping characteristic energy ($C_3$) and hyperbolic arrival insertion $\Delta V$.
+          </p>
+          <p><span class="tag">Active Coding</span></p>
+        </div>
+
+        <!-- NUOVO PROGETTO: WALKER DELTA (WIP) -->
+        <div class="card">
+          <h3>LEO Walker Delta Constellation Optimization</h3>
+          <p class="meta">Constellation Design · Coverage Analysis · Revisit Time · Visibility Geometry</p>
+          <p>
+            Design and optimization framework for a Walker Delta satellite constellation in LEO to ensure 
+            continuous coverage over a specific regional Area of Interest (e.g., Mediterranean basin).
+          </p>
+          <p>
+            Analyzes revisit times, maximum gaps, and elevation angles to determine the optimal trade-off 
+            between the number of orbital planes, satellites per plane, and coverage performance.
+          </p>
+          <p><span class="tag">Active Coding</span></p>
+        </div>
+
+        <!-- PROGETTO: BATCH OD (WIP) -->
         <div class="card">
           <h3>Batch Orbit Determination and Covariance Analysis</h3>
           <p class="meta">Least Squares · State Estimation · Residual Analysis · Observability</p>
@@ -102,9 +134,10 @@
             Includes residual evaluation, convergence assessment, covariance matrix computation,
             and analysis of estimation sensitivity to tracking geometry.
           </p>
-          <p><span class="tag">Active Coding</span></p>
+          <p><span class="tag">WIP</span></p>
         </div>
 
+        <!-- PROGETTO: EKF (WIP) -->
         <div class="card">
           <h3>Extended Kalman Filter for Nonlinear Orbit Estimation</h3>
           <p class="meta">Nonlinear Dynamics · EKF · Covariance Propagation · GNC</p>
@@ -115,9 +148,10 @@
             Includes state and covariance propagation, measurement update integration,
             Q/R tuning analysis, and comparison against batch estimation approaches.
           </p>
-          <p><span class="tag">Coming Soon</span></p>
+          <p><span class="tag">In Progress</span></p>
         </div>
 
+        <!-- PROGETTO: TESI (Completo) -->
         <div class="card">
           <h3>MSc Thesis – LiDAR-Based Pose Estimation of Non-Cooperative Space Targets</h3>
           <p class="meta">Pose Estimation · OBB-TM Algorithm · Performance Analysis · Orbital Robotics</p>
@@ -142,18 +176,18 @@
     <section>
       <h2>Technical Skills</h2>
       <p>
-        <b>Flight Dynamics:</b> Orbit propagation, perturbation modeling (J2, drag, SRP), maneuver analysis, orbit determination.
+        <b>Flight Dynamics & Mission Analysis:</b> Orbit propagation, perturbation modeling (J2, drag, SRP), constellation design (Walker Delta), interplanetary trajectory design (Lambert solvers), maneuver analysis, orbit determination.
       </p>
       <p>
-        <b>Estimation & GNC:</b> Batch Least Squares, Extended Kalman Filter, covariance analysis, nonlinear system modeling.
+        <b>Estimation & GNC/AOCS:</b> Batch Least Squares, Extended Kalman Filter (EKF), covariance analysis, nonlinear system modeling, attitude detumbling architectures.
       </p>
       <p>
-        <b>Tools:</b> GMAT, Python (NumPy, SciPy, Matplotlib), Git/GitHub, LaTeX.
+        <b>Tools:</b> GMAT, Python (NumPy, SciPy, Matplotlib), MATLAB & Simulink (Simscape), Git/GitHub, LaTeX.
       </p>
     </section>
 
     <footer>
-      © <span id="year"></span> Giuliano Pennacchio · Portfolio focused on Flight Dynamics & State Estimation
+      © <span id="year"></span> Giuliano Pennacchio · Portfolio focused on Flight Dynamics, Mission Analysis & State Estimation
     </footer>
   </div>
 
