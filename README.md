@@ -27,7 +27,7 @@ The projects are structured to showcase a complete space mission life-cycle engi
 ### High-Fidelity Orbit Propagation and Perturbation Analysis
 Development of a numerical propagation framework for LEO spacecraft including comparison between 2-body and perturbed models, long-term trajectory divergence assessment and sensitivity analysis.
 
-### Interplanetary Launch Window Analysis (Porkchop Plot Solver) `[Active Coding]`
+### Interplanetary Launch Window Analysis (Porkchop Plot Solver)
 Numerical tool written in Python to optimize Earth-to-Mars interplanetary transfers by solving Lambert's problem across date grids, generating characteristic energy ($C_3$) and $\Delta V$ insertion profiles.
 
 ### LEO Walker Delta Constellation Optimization `[Active Coding]`
