@@ -53,7 +53,7 @@
       <p>
         I develop technical projects combining GMAT simulations and Python-based numerical modeling,
         with an emphasis on perturbation analysis, Walker constellation coverage optimization, Lambert's problem solvers, 
-        and recursive state estimation (EKF).
+        recursive state estimation (EKF), and vehicle dynamics telemetry processing.
       </p>
 
       <p>
@@ -68,6 +68,7 @@
         <span class="tag">Trajectory Optimization</span>
         <span class="tag">Orbit Determination</span>
         <span class="tag">Extended Kalman Filter</span>
+        <span class="tag">Vehicle Dynamics</span>
         <span class="tag">GMAT</span>
         <span class="tag">Python</span>
       </div>
@@ -77,7 +78,7 @@
       <h2>Technical Projects</h2>
       <div class="grid">
 
-        <!-- PROGETTO 1: ORE PROPAGATION (Completo) -->
+        <!-- PROGETTO 1: ORE PROPAGATION -->
         <div class="card">
           <h3>High-Fidelity Orbit Propagation and Perturbation Analysis</h3>
           <p class="meta">Orbital Mechanics · GMAT · Numerical Propagation · Sensitivity Analysis</p>
@@ -93,7 +94,7 @@
           <p><a href="https://github.com/GiulianoPennacchioJ/high-fidelity-orbit-propagation" target="_blank" rel="noopener">Repository →</a></p>
         </div>
 
-        <!-- NUOVO PROGETTO: PORKCHOP PLOT (WIP - Iniziamo da qui) -->
+        <!-- PROGETTO: PORKCHOP PLOT -->
         <div class="card">
           <h3>Interplanetary Transfer Optimization (Earth-Mars)</h3>
           <p class="meta">Trajectory Optimization · Lambert's Problem · Astropy & Poliastro · Python</p>
@@ -111,7 +112,7 @@
           </p>
         </div>
 
-        <!-- PROGETTO: WALKER DELTA (Completo) -->
+        <!-- PROGETTO: WALKER DELTA -->
         <div class="card">
           <h3>LEO Walker Delta Constellation Optimization</h3>
           <p class="meta">Constellation Design · Coverage Analysis · Revisit Time · Visibility Geometry</p>
@@ -125,6 +126,25 @@
           </p>
           <p>
             <a href="https://github.com/GiulianoPennacchioJ/constellation-optimization" target="_blank" rel="noopener">
+              Repository →
+            </a>
+          </p>
+        </div>
+
+        <!-- PROGETTO: F1 TELEMETRY & VEHICLE DYNAMICS (NUOVO) -->
+        <div class="card">
+          <h3>F1 Telemetry & Vehicle Dynamics Analysis Toolkit</h3>
+          <p class="meta">Kinematics · Aerodynamics · ERS Deployment · Savitzky-Golay · FastF1 & Python</p>
+          <p>
+            High-fidelity telemetry processing engine for vehicle dynamics analysis, featuring uniform spatial 
+            grid resampling (&Delta;s = 1.0 m) and kinematic state reconstruction via Savitzky-Golay filtering.
+          </p>
+          <p>
+            Includes non-linear aerodynamic load estimation ($F_z$, $F_x$, $L/D$), G-G friction circle utilization, 
+            and ERS hybrid clipping deployment analysis.
+          </p>
+          <p>
+            <a href="https://github.com/GiulianoPennacchioJ/f1-telemetry-vehicle-dynamics" target="_blank" rel="noopener">
               Repository →
             </a>
           </p>
@@ -159,7 +179,7 @@
           <p><span class="tag">In Progress</span></p>
         </div>
 
-        <!-- PROGETTO: TESI (Completo) -->
+        <!-- PROGETTO: TESI -->
         <div class="card">
           <h3>MSc Thesis – LiDAR-Based Pose Estimation of Non-Cooperative Space Targets</h3>
           <p class="meta">Pose Estimation · OBB-TM Algorithm · Performance Analysis · Orbital Robotics</p>
@@ -187,10 +207,10 @@
         <b>Flight Dynamics & Mission Analysis:</b> Orbit propagation, perturbation modeling (J2, drag, SRP), constellation design (Walker Delta), interplanetary trajectory design (Lambert solvers), maneuver analysis, orbit determination.
       </p>
       <p>
-        <b>Estimation & GNC/AOCS:</b> Batch Least Squares, Extended Kalman Filter (EKF), covariance analysis, nonlinear system modeling, attitude detumbling architectures.
+        <b>Estimation & GNC/AOCS / Dynamics:</b> Batch Least Squares, Extended Kalman Filter (EKF), covariance analysis, nonlinear system modeling, vehicle dynamics, signal filtering, attitude detumbling architectures.
       </p>
       <p>
-        <b>Tools:</b> GMAT, Python (NumPy, SciPy, Matplotlib), MATLAB & Simulink (Simscape), Git/GitHub, LaTeX.
+        <b>Tools:</b> GMAT, Python (NumPy, SciPy, Matplotlib, FastF1), MATLAB & Simulink (Simscape), Git/GitHub, LaTeX.
       </p>
     </section>
 
