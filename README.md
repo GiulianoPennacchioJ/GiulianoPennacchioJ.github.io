@@ -13,12 +13,13 @@ This portfolio presents my work in **Flight Dynamics, Mission Analysis, and Stat
 - High-fidelity orbit propagation and perturbation analysis
 - Interplanetary trajectory design and launch window optimization (Porkchop Plots)
 - Regional satellite constellation design and coverage optimization (Walker Delta)
+- High-fidelity vehicle dynamics & telemetry state processing
 - Orbit determination and recursive state estimation (Batch Least Squares & EKF)
 - Numerical simulation using GMAT, MATLAB/Simulink, and Python
 
 The projects are structured to showcase a complete space mission life-cycle engineering capability:
 
-**Orbit Propagation & Mission Analysis → Trajectory Design & Constellation Optimization → Orbit Determination & State Estimation**
+**Orbit Propagation & Mission Analysis → Trajectory Design & Constellation Optimization → Vehicle Dynamics & Telemetry Processing → Orbit Determination & State Estimation**
 
 ---
 
@@ -32,6 +33,9 @@ Numerical tool written in Python to optimize Earth-to-Mars interplanetary transf
 
 ### LEO Walker Delta Constellation Optimization 
 Design framework evaluating revisit times, access slots, and geometric coverage over custom regional Areas of Interest (e.g., Mediterranean) using pure numerical arrays in NumPy.
+
+### F1 Telemetry & Vehicle Dynamics Analysis Toolkit
+Telemetry processing engine for high-speed vehicle dynamics analysis, featuring uniform spatial grid resampling ($\Delta s = 1.0\text{ m}$), Savitzky-Golay state filtering, non-linear aerodynamic force estimation ($F_z$, $F_x$, $L/D$), $G\text{-}G$ friction circle mapping, and ERS hybrid clipping evaluation.
 
 ### Batch Orbit Determination and Covariance Analysis `[In Progress]`
 Implementation of a Batch Least Squares estimator using simulated range and range-rate observations, including residual analysis, convergence assessment and covariance evaluation.
@@ -52,15 +56,16 @@ Performance analysis of the OBB-TM algorithm for LiDAR-based pose acquisition in
 - Constellation architecture & Coverage analysis  
 - Maneuver budgeting  
 
-### Estimation & GNC/AOCS
+### Estimation, Dynamics & GNC/AOCS
 - Batch Least Squares  
 - Extended Kalman Filtering (EKF)  
+- Vehicle dynamics & Telemetry processing  
 - Covariance analysis & Sensor fusion  
 - Nonlinear attitude and orbit dynamics  
 
 ### Tools
 - GMAT  
-- Python (NumPy, SciPy, Matplotlib, Astropy, Poliastro, GeoPandas, Plotly)  
+- Python (NumPy, SciPy, Matplotlib, Astropy, Poliastro, FastF1, GeoPandas, Plotly)  
 - MATLAB & Simulink (Simscape)  
 - Git/GitHub · LaTeX  
 
