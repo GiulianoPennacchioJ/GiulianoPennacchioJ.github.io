@@ -19,7 +19,7 @@ This portfolio presents my work in **Flight Dynamics, Mission Analysis, and Stat
 
 The projects are structured to showcase a complete space mission life-cycle engineering capability:
 
-**Orbit Propagation & Mission Analysis → Trajectory Design & Constellation Optimization → Vehicle Dynamics & Telemetry Processing → Orbit Determination & State Estimation**
+**Orbit Propagation & Mission Analysis → Trajectory Design & Constellation Optimization → Ground Track & 3D Geospatial Visualization → Vehicle Dynamics & Telemetry Processing → Orbit Determination & State Estimation**
 
 ---
 
@@ -33,6 +33,9 @@ Numerical tool written in Python to optimize Earth-to-Mars interplanetary transf
 
 ### LEO Walker Delta Constellation Optimization 
 Design framework evaluating revisit times, access slots, and geometric coverage over custom regional Areas of Interest (e.g., Mediterranean) using pure numerical arrays in NumPy.
+
+### Multi-Constellation Orbit & Ground Track Visualizer
+Analytical propagation engine utilizing SGP4/SDP4 models on TLE datasets across LEO, MEO, GEO, and IGSO regimes. Features TEME-to-ITRS sidereal coordinate transformations, 2D equirectangular map generation, kinematic speed profiles, and interactive 3D KML trajectory exports for Google Earth Pro.
 
 ### F1 Telemetry & Vehicle Dynamics Analysis Toolkit
 Telemetry processing engine for high-speed vehicle dynamics analysis, featuring uniform spatial grid resampling ($\Delta s = 1.0\text{ m}$), Savitzky-Golay state filtering, non-linear aerodynamic force estimation ($F_z$, $F_x$, $L/D$), $G\text{-}G$ friction circle mapping, and ERS hybrid clipping evaluation.
@@ -65,7 +68,7 @@ Performance analysis of the OBB-TM algorithm for LiDAR-based pose acquisition in
 
 ### Tools
 - GMAT  
-- Python (NumPy, SciPy, Matplotlib, Astropy, Poliastro, FastF1, GeoPandas, Plotly)  
+- Python (NumPy, SciPy, Matplotlib, SGP4, Astropy, Poliastro, FastF1, GeoPandas, Plotly)  
 - MATLAB & Simulink (Simscape)  
 - Git/GitHub · LaTeX  
 
