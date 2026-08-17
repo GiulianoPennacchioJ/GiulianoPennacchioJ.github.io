@@ -43,8 +43,8 @@ Telemetry processing engine for high-speed vehicle dynamics analysis, featuring 
 ### Batch Orbit Determination and Covariance Analysis `[In Progress]`
 Implementation of a Batch Least Squares estimator using simulated range and range-rate observations, including residual analysis, convergence assessment and covariance evaluation.
 
-### Extended Kalman Filter for Nonlinear Orbit Estimation `[In Progress]`
-Design and implementation of an EKF for recursive orbit estimation, including nonlinear dynamics modeling, covariance propagation and Q/R tuning analysis.
+### Real-Time Orbit Determination & Extended Kalman Filter (EKF)
+High-fidelity MATLAB/Simulink framework for real-time spacecraft orbit determination and nonlinear state estimation. It processes absolute orbital dynamics, handles GNSS data assimilation, enforces $3\sigma$ covariance consistency, and executes real-time Fault Detection, Isolation, and Recovery (FDIR) using Mahalanobis distance metrics ($D_M^2$) and Normalized Innovation Squared (NIS) consistency checks against $\chi^2$ distribution limits.
 
 ### MSc Thesis – LiDAR-Based Pose Estimation of Non-Cooperative Space Targets
 Performance analysis of the OBB-TM algorithm for LiDAR-based pose acquisition in lost-in-space conditions, with emphasis on robustness, symmetry handling and estimation accuracy.
