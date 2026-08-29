@@ -3,6 +3,7 @@
 This repository contains the source code of my personal portfolio website:
 
 🔗 https://GiulianoPennacchioJ.github.io
+📄 Curriculum Vitae: [Download PDF](https://GiulianoPennacchioJ.github.io/CV_Giuliano_Pennacchio.pdf)
 
 ---
 
